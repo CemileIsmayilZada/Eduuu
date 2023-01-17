@@ -1,4 +1,5 @@
 ﻿using EduHome.Business.DTOs.Auth;
+using EduHome.Business.Validators.Auth;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,6 @@ namespace EduHome.Business.Services.Interfaces
 	public interface IAuthService
 	{
 		Task RegisterAsync(RegisterDTO registerDTO);
-		Task LoginAsync(LoginDTO loginDTO);
+        Task<TokenResponseDTO> LoginAsync(LoginDTO loginDTO);
 	}
 }

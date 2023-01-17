@@ -18,7 +18,7 @@ namespace EduHome.API.Conrollers
             _authService = authService;
         }
 
-        [HttpPost("")] 
+        [HttpPost("[action]")] 
         public async Task<IActionResult> Register(RegisterDTO register)
         {
             try
@@ -35,6 +35,24 @@ namespace EduHome.API.Conrollers
                 return StatusCode((int)HttpStatusCode.InternalServerError);
             }
            
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Login(LoginDTO loginDTO)
+        {
+            try
+            {
+                var tokenResponse = _authService.LoginAsync(loginDTO);
+                return Ok(tokenResponse);
+            }
+            catch(AuthFailException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception)
+            {
+                return StatusCode((int)(HttpStatusCode.InternalServerError));
+            }
         }
     }
 }
