@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\EduHome\src\EduHome.API\obj\Release\net6.0\EduHome.API.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\EduHome\src\EduHome.API\obj\Release\net6.0\EduHome.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\EduHome\src\EduHome.API\obj\Release\net6.0\EduHome.API.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\EduHome\src\EduHome.API\obj\Release\net6.0\EduHome.API.AssemblyInfo.cs
+C:\Users\User\Desktop\EduHome\src\EduHome.API\obj\Release\net6.0\EduHome.API.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\EduHome\src\EduHome.API\obj\Release\net6.0\EduHome.API.MvcApplicationPartsAssemblyInfo.cache
